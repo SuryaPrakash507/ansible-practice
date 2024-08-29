@@ -5,5 +5,5 @@
    - name: install http on node
      apt:
        name: apache2
-       state: present
+       state: absent
 
