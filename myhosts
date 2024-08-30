@@ -5,5 +5,5 @@
 172.31.95.63
 
 
-[newserver:vars]
+[oldserver:vars]
 myjavapack= openjdk-8-jdk
