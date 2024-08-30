@@ -6,4 +6,4 @@
 
 
 [oldserver:vars]
-myjavapack= openjdk-8-jdk
+myjavapack= openjdk-8-jre
