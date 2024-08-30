@@ -2,13 +2,10 @@
 - hosts: newserver
   become: yes
   tasks:
-   - name: install http on node
+   - name: install tree on node
      apt:
-       name: apache2
+       name: "{{mytreepack}}"
        state: present
-   - name: start the web server
-     service:
-       name: apache2
-       state: started
+  
    
 
