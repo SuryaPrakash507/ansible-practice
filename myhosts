@@ -3,3 +3,7 @@
 
 [newserver]
 172.31.95.63
+
+
+[newserver:vars]
+myjavapack: openjdk-8-jdk

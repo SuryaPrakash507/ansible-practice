@@ -1,0 +1,8 @@
+---
+- hosts: oldserver
+  become: yes
+  tasks:
+   - name: install java on node
+     apt:
+       name: "{{myjavapack}}"
+       state: present
