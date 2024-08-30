@@ -3,6 +3,6 @@
   become: yes
   tasks:
    - name: install java on node
-     apt:
+     dnf:
        name: "{{myjavapack}}"
        state: present
