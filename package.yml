@@ -4,7 +4,7 @@
   tasks:
    - name: install tree on node
      apt:
-       name: "{{mytreepack}}"
+       name: "{{mynewpack}}"
        state: present
   
    
