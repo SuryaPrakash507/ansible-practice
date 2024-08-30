@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.90.91
+  become: yes
+  tasks:
+   - name: uninstall tree software
+     apt:
+       name: tree
+       state: absent
+     when: ansible_os_family=="debian"
