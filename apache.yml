@@ -13,3 +13,9 @@
      service:
       name: "{{myapachepack}}"
       state: started
+
+   - name: install java on node
+     dnf:
+       name: "{{myjavapack}}"
+       state: present
+     tags: java
