@@ -1,0 +1,8 @@
+---
+- hosts: server1
+  become: yes
+  gather_facts: yes
+  tasks: 
+  - name: executing linuc commands
+    command: mkdir folder1
+    
