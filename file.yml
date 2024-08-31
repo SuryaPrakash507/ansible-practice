@@ -17,3 +17,4 @@
      get_url:
       url: https://apache.root.lu/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80-deployer.tar.gz
       dest: home/surya/apache-tomcat-9.0.80-deployer.tar.gz
+      force_basic_auth: yes
