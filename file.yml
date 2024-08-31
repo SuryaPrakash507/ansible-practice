@@ -15,5 +15,5 @@
 
    - name: internet files
      get_url:
-      url: https://downloads.apache.org/tomcat/tomcat-9/v9.0.34/bin/tomcat-9.0.34.tar.gz
+      url: hhttps://ftp.unicamp.br/pub/apache/tomcat/tomcat-8/v8.5.73/bin/apache-tomcat-8.5.73-deployer.tar.gz
       dest: home/surya/tomcat-9.0.34.tar.gz
