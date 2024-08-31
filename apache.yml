@@ -1,0 +1,15 @@
+---
+- hosts: server2
+  become: yes
+  gather_facts: yes
+  tasks:
+   - name: install webserver on server2
+     dnf: 
+      name: "{{myapachepack}}"
+      state: present
+     
+
+   - name: start the web server
+     service:
+      name: "{{myapachepack}}"
+      state: started
