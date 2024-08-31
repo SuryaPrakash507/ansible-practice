@@ -1,0 +1,19 @@
+---
+- hosts: 172.31.89.182
+  become: yes
+  gather_facts: yes
+  tasks: 
+   - name: creating a file
+     file:
+      path: /home/surya/file1
+      state: touch
+
+   - name: copying a file
+     copy: 
+      src: java.yml
+      dest: /home/surya/
+
+   - name: internet files
+     get_url:
+      url: https://downloads.apache.org/tomcat/tomcat-9/v9.0.34/bin/tomcat-9.0.34.tar.gz
+      dest: home/surya/tomcat-9.0.34.tar.gz
